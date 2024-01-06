@@ -1,5 +1,5 @@
 [build]
-  command = "npm-run-all build:frontend build:backend"  # Build command for Netlify
+  command = "npm run build:frontend && npm run build:backend"  # Build command for Netlify
 
 [[redirects]]
   from = "/*"

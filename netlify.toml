@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"  # Build command for Netlify
+  publish = "my-react-app/build"  # Directory to be published after the build (adjust path as needed)
+
+# If your backend is deployed separately or if there's no backend to deploy on Netlify, you can skip the functions section
+[functions]
+  directory = "backend"  # Directory containing serverless functions (if applicable, adjust path as needed)
+
+[dev]
+  command = "npm run start"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
